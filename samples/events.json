@@ -1,0 +1,82 @@
+[
+  {
+    "id": "16d224e2-daa4-44bb-b7b4-4b8751bed26a",
+    "title": "Historical Landmarks Tour",
+    "description": "A guided tour through some of the most significant historical sites, uncovering their rich history and impact.",
+    "location": "Sydney, Australia",
+    "date": "2025-07-07T09:58:30Z",
+    "capacity": 99
+  },
+  {
+    "id": "0dd696e3-7ee5-484b-b89c-c7e285fd6688",
+    "title": "Historical Landmarks Tour",
+    "description": "A guided tour through some of the most significant historical sites, uncovering their rich history and impact.",
+    "location": "Toronto, Canada",
+    "date": "2025-05-10T09:58:30Z",
+    "capacity": 84
+  },
+  {
+    "id": "38d1c72c-122b-4221-bb1d-f42145131344",
+    "title": "Sustainable Living and Green Energy Conference",
+    "description": "Learn about sustainable living practices and the future of renewable energy sources.",
+    "location": "Paris, France",
+    "date": "2025-11-11T09:58:30Z",
+    "capacity": 34
+  },
+  {
+    "id": "6ffd54cb-d27d-4c54-b6a6-606b9a817bcc",
+    "title": "Wildlife Photography Expedition",
+    "description": "Capture stunning images of nature and wildlife in their natural habitat with professional photographers.",
+    "location": "Remote",
+    "date": "2025-09-13T09:58:30Z",
+    "capacity": 24
+  },
+  {
+    "id": "c09e025b-5a1c-41f5-b965-eaacd1d0d006",
+    "title": "Historical Landmarks Tour",
+    "description": "A guided tour through some of the most significant historical sites, uncovering their rich history and impact.",
+    "location": "Tokyo, Japan",
+    "date": "2025-05-01T09:58:30Z",
+    "capacity": 83
+  },
+  {
+    "id": "3bbcba47-3177-460f-8190-fd122b7cb92c",
+    "title": "Culinary Masterclass with Celebrity Chef",
+    "description": "Join a world-renowned chef in a hands-on cooking session, learning gourmet techniques and recipes.",
+    "location": "Paris, France",
+    "date": "2025-12-11T09:58:30Z",
+    "capacity": 60
+  },
+  {
+    "id": "67db27be-fc6a-450d-b48f-22535dfb1c97",
+    "title": "International Wine Tasting Festival",
+    "description": "Sample and learn about the finest wines from around the world, guided by expert sommeliers.",
+    "location": "Paris, France",
+    "date": "2025-09-25T09:58:30Z",
+    "capacity": 78
+  },
+  {
+    "id": "9e1b74db-0719-4557-b14e-ae37a30549ec",
+    "title": "International Wine Tasting Festival",
+    "description": "Sample and learn about the finest wines from around the world, guided by expert sommeliers.",
+    "location": "Sydney, Australia",
+    "date": "2025-06-27T09:58:30Z",
+    "capacity": 64
+  },
+  {
+    "id": "d0b92a16-e140-4465-a92a-8d062b9c0a1b",
+    "title": "Wildlife Photography Expedition",
+    "description": "Capture stunning images of nature and wildlife in their natural habitat with professional photographers.",
+    "location": "Madrid, Spain",
+    "date": "2025-08-16T09:58:30Z",
+    "capacity": 89
+  },
+  {
+    "id": "14de7358-737a-46a8-9863-3f2d3ace91fd",
+    "title": "Culinary Masterclass with Celebrity Chef",
+    "description": "Join a world-renowned chef in a hands-on cooking session, learning gourmet techniques and recipes.",
+    "location": "Madrid, Spain",
+    "date": "2025-05-11T09:58:30Z",
+    "capacity": 78
+  }
+]
