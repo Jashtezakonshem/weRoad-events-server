@@ -6,12 +6,14 @@ import {
   Get,
   Param,
   Post,
+  ParseIntPipe,
   Query,
 } from '@nestjs/common';
 import { EventService } from './event.service';
 import { ReservationService } from './reservation.service';
 import { Event as EventModel } from '@prisma/client';
 import { MakeReservationDto } from './dto/makeReservation.dto';
+import { Availability } from './types';
 
 @Controller()
 export class AppController {
@@ -22,9 +24,9 @@ export class AppController {
 
   @Get('events')
   async getEvents(
-    @Query('available') available: boolean,
-    @Query('limit') limit: number,
-    @Query('page') page: number,
+    @Query('available') available: Availability,
+    @Query('limit', ParseIntPipe) limit: number,
+    @Query('page', ParseIntPipe) page: number,
   ): Promise<EventModel[]> {
     return this.eventService.events({
       available,

@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from './app.service';
 import { Event, Prisma } from '@prisma/client';
+import { Availability } from './types';
 
 @Injectable()
 export class EventService {
@@ -22,10 +23,14 @@ export class EventService {
     limit,
     page,
   }: {
-    available: boolean;
+    available: Availability;
     limit: number;
     page: number;
   }): Promise<Event[]> {
+    //TODO
+    // in order to use available I need use groupBy
+    // and having, considering reservations.length and capacity
+    console.log({ available });
     const skip = page ? (page - 1) * limit : 0;
     const events = await this.prisma.event.findMany({
       skip,
@@ -36,17 +41,10 @@ export class EventService {
         },
       },
     });
-    return events
-      .filter((event) =>
-        available === undefined
-          ? true
-          : available
-            ? event.capacity > event._count.reservations
-            : event.capacity === event._count.reservations,
-      )
-      .map((event) => ({
-        ...event,
-        reservationsCount: event._count.reservations,
-      }));
+    // I didn't find a smart way to change _count into a more talking name
+    return events.map((event) => ({
+      ...event,
+      reservationsCount: event._count.reservations,
+    }));
   }
 }
